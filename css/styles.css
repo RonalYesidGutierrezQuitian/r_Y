@@ -1,0 +1,190 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#anim {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/fondo.jpg") no-repeat center center / cover;
+}
+
+#mensajes {
+    background: no-repeat url("../images/conteo.png");
+    width: 310px;
+    height: 50px;
+    position: fixed;
+    top: 400px;
+    left: 800px;
+    opacity:0%;
+    animation-name:mensaje;
+    animation-duration: 6s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+
+@keyframes mensaje {
+    30% {
+        opacity: 100%;
+        background-position: 0 -10px;
+    }
+
+    50% {
+        opacity: 100%;
+        background-position: 0 -80px;
+    }
+
+    70% {
+        opacity: 100%;
+        background-position: 0 -150px;
+    }
+
+    100% {
+        opacity: 100%;
+        background-position: 0 -220px;
+    }
+}
+
+
+.nube {
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    right: 0;
+    animation-name: nube;
+    animation-duration: 5s;
+    animation-delay: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    opacity: 0;
+}
+
+@keyframes nube {
+    12% {
+        transform: translate(-60%, 0);
+        opacity: 100%;
+    }
+
+
+    25% {
+        transform: translate(-125%, 0);
+        opacity: 100%;
+    }
+
+    50% {
+        transform: translate(-250%, 0);
+        opacity: 100%;
+    }
+
+    70% {
+        transform: translate(-250%, 0);
+        opacity: 100%;
+    }
+    100% {
+        transform: translate(-600%, -5%);
+        opacity: 100%;
+    }
+}
+
+#lluvia {
+    background: no-repeat url("../images/lluvia2.gif");
+    width: 1500px;
+    height: 250px;
+    position: fixed;
+    animation-name: lluvia;
+    animation-duration: 3s;
+    animation-delay: 11s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+    opacity: 0;
+    left: 50%;
+    bottom: 50%;
+}
+
+@keyframes lluvia {
+    30% {
+        opacity: 100%;
+        bottom:40%
+    }
+
+    50% {
+        opacity: 100%;
+        bottom:30%
+    }
+
+    70% {
+        opacity: 100%;
+        bottom:20%
+    }
+
+    100% {
+        opacity: 100%;
+        bottom:10%
+    }
+}
+
+
+.sol{
+    position: absolute;
+    right: 20%;
+    top: 8%;
+    width: 150px;
+    height: 150px;
+    opacity: 50%;
+    animation-name: sol;
+    animation-duration: 1s;
+    animation-delay: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: backwards;
+}
+
+@keyframes sol {
+    0% {
+        opacity: 100%;
+    }
+
+    50% {
+        opacity: 75%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+#flor {
+    width: 256px;
+    height: 256px;
+    position: fixed;
+    bottom: 0;
+    left: 800px;
+    opacity: 0;
+    animation-name: flor;
+    animation-duration: 4s;
+    animation-delay: 14s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flor {
+    0% {
+        opacity: 100%;
+        top: 1000px;
+    }
+
+    100% {
+        opacity: 100%;
+        bottom: 200px;
+    }
+}
